@@ -11,6 +11,9 @@ manager.py is a simple interface to switch between effects or set the brightness
 ### [rainbowRGB.py](rainbowRGB.py)
 This effect sets every key to a different color every second like an rainbow.
 
+### [raindrops.py](raindrops.py)
+This effect sets the light to a light grey background then randomly colors keys blue. Its like rain against a window. The background color and key color can both be changed at the top of the file. 
+
 ### [sections-randomRGB.py](sections-randomRGB.py)
 This effect sets each section of the keyboard to a different color out of a list of color options. The keyboard is split into 15 sections and each section pulls a random color out of the color list. The color list contains Red,Green & Blue. These can be switched out with other colors at the top of the file. (currently 10key is split with top and bottom but in future updates will be all one color.)
 

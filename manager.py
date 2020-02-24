@@ -40,6 +40,11 @@ def rainbowRGB():
     global runningPID
     runningPID = p.pid
 
+def rainDrops():
+    p = subprocess.Popen(['python3 raindrops.py'],stdout=subprocess.PIPE,shell=True, start_new_session=True)
+    global runningPID
+    runningPID = p.pid
+
 def menu():
     print(" ")
     print("RAZER EFFECT SETTER")
@@ -47,6 +52,7 @@ def menu():
     print("1: sections random rgb")
     print("2: stripes")
     print("3: rainbow rgb")
+    print("4: rain drops")
     print("-")
     print("b: Brightness")
     print("k: Kill Any Running Effects")
@@ -86,6 +92,13 @@ def run():
             checkProcess()
             print("starting Rainbow RGB effect")
             rainbowRGB()
+            menu()
+
+        elif option == str(4):
+            os.system('cls' if os.name == 'nt' else 'clear')
+            checkProcess()
+            print("starting Rainbow RGB effect")
+            rainDrops()
             menu()
 
         elif option == "b":
